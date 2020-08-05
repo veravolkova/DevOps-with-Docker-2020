@@ -1,0 +1,6 @@
+cd /c/users/verap/Docker/Part1/7
+
+docker build -t curler .
+docker run -it curler
+
+#helsinki.fi

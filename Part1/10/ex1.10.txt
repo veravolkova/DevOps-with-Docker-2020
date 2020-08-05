@@ -1,0 +1,4 @@
+cd /c/users/verap/Docker/Part1/10/frontend-example-docker
+
+docker build -t node-web-app .
+docker run -p 5000:5000 -d node-web-app

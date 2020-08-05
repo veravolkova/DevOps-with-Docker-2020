@@ -1,0 +1,13 @@
+$ docker container ls -a
+$ docker stop 72105dbd8f7f
+$ docker container prune
+
+$ docker rmi nginx
+
+$ docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+$ docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+
+

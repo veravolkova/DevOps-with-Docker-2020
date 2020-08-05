@@ -1,0 +1,4 @@
+cd /c/users/verap/Docker/Part1/6/exercise
+
+docker build -t docker-clock .
+docker run -it docker-clock

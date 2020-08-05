@@ -1,0 +1,12 @@
+$ docker run -d --rm -it --name bashex devopsdockeruh/exec_bash_exercise
+
+$ docker exec -it bashex sh
+# tail -f ./logs.txt
+Secret message is:
+"Docker is easy"
+
+^C
+# read escape sequence -- CTRL+P, CTRL+Q
+
+$ docker kill bashex
+

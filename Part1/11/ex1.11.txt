@@ -1,0 +1,10 @@
+cd /c/users/verap/Docker/Part1/11/backend-example-docker
+> logs.txt
+
+docker build -t node-web-app-back .
+#absolute path Windows
+#docker run -d -p 8000:8000 -v /c/users/verap/Docker/Part1/11/backend-example-docker/logs.txt:/usr/src/app/logs.txt node-web-app-back  
+docker run -d -p 8000:8000 -v $(pwd)/logs.txt:/usr/app/logs.txt node-web-app-back
+
+docker-machine ip
+#navigate to http://192.168.99.100:8000/

@@ -1,0 +1,15 @@
+$ docker run -d nginx
+$ docker run -d nginx
+$ docker run -d nginx
+
+$ docker container ls -a
+
+$ docker stop 7273c1934551
+$ docker stop ce00cd538040
+
+
+$ docker ps -a                                                                                                                    CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+7273c1934551        nginx               "/docker-entrypoint.…"   17 hours ago        Exited (0) 2 minutes ago                        epic_kapitsa
+ce00cd538040        nginx               "/docker-entrypoint.…"   17 hours ago        Exited (0) 2 minutes ago                        magical_hamilton
+72105dbd8f7f        nginx               "/docker-entrypoint.…"   17 hours ago        Up 6 minutes                80/tcp              elastic_ganguly
+

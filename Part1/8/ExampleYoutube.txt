@@ -1,0 +1,26 @@
+a)
+docker run -d -it --name ubuntu2 ubuntu:16.04
+docker exec -it ubuntu2 sh
+
+apt-get update && apt-get install -y curl
+
+curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl 
+chmod a+rx /usr/local/bin/youtube-dl 
+
+ youtube-dl  
+-- /usr/bin/env: 'python': No such file or directory 
+
+apt-get install -y python
+youtube-dl
+
+LC_ALL=C.UTF-8 youtube-dl
+
+export LC_ALL=C.UTF-8 
+youtube-dl https://imgur.com/JY5tHqr
+
+b) Dockerfile 
+
+$ docker build -t youtube-dl . 
+$ docker run youtube-dl https://imgur.com/JY5tHqr
+
+docker container ls -a
